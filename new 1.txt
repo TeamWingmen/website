@@ -1,0 +1,26 @@
+</div>
+	</div>
+    <form>
+  FIRST NAME:<br>
+  <input type="text" name="firstname"><br>
+  LAST NAME:<br>
+  <input style = "color:white" type="text" name="lastname">
+</form>
+    
+    <p1 align-content:"center" style="color:white;" id="Meeting">Meeting Name:</p1>
+    <input type="textfield" id="meetingName"/>
+   
+    
+  <button button id="saveButton">Save:</button>
+  <p1 align-content:"center" style="color:white;" id="Meeting">Meeting Time:</p1>
+    <input type="textfield" id="meetingName2"/>
+   
+    
+  <button button id="saveButton2">Save:</button>
+  <p1 align-content:"center" style="color:white;" id="Meeting">Meeting Date:</p1>
+    <input type="textfield" id="meetingName3"/>
+   
+    
+  <button button id="saveButton3">Save:</button>
+    <script src="/Users/Prabh/Downloads/database.js"></script>
+    

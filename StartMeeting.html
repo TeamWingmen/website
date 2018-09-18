@@ -1,0 +1,114 @@
+<html>
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+    form {
+        padding-top: 15%;
+        padding-left: 40%;
+    }
+
+   input[type=text], select {
+   
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0 10px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+input[type=submit] {
+    width: 100%;
+	color:white;
+    background-color: #4CAF50;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+    display: block;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+</style>
+</head>
+
+<div class="header">
+		<img src="BlueLogo.png">
+		<a href="signin.html" class="logo">Smart Notes</a>
+		<div class="header-right">
+			
+    		<a href="Signin.html">SIGN OUT</a>
+    		<a href="Signin.html">HOME</a>
+			<div>
+			</div>
+	<title>Smart Notes</title>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+	<link rel='stylesheet' href='style.css' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Date Picker Links -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css" rel="stylesheet" id="bootstrap-css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+
+
+</head>
+<body>
+	
+  <form action="Meeting.html">
+    <label for="fname"></label>
+    <input type="text" id="fname" name="firstname" placeholder="Meeting Name..">
+
+    <label for="lname"></label>
+    <input type="text" id="lname" name="lastname" placeholder="Meeting time..">
+
+    <label for="country"></label>
+    <select id="country" name="country">
+      <option value="" disabled selected>Please Select</option>    
+      <option value="australia">Corporate</option>
+      <option value="canada">Private</option>
+      <option value="usa">Public</option>
+    </select>
+
+    <!--<label for="iname"></label>
+    <input type="date" id="iname" name="lastname" placeholder="Meeting Date..">-->
+
+    <div id="iname" class="input-group date" data-date-formate="dd-mm-yyyy">
+        <input class="form-control" type="" name="" style="height: 48px;">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-calender"></i></span>
+    </div>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+    		
+
+    <!-- JavaScript for the Date Picker -->
+    <script type="text/javascript">
+        $(function(){
+            $("#iname").datepicker({
+                autoclose: true,
+                todayHighlight: true,
+                format: "dd/mm/yyyy"
+            }).datepicker('update', new Date());
+        });
+    </script>
+
+    <script src="smartnotes.js"></script>
+        
+    </body>
+  
+    
+</html>

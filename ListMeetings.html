@@ -1,0 +1,55 @@
+<html>
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .btn {
+    align-content: center
+    border: none;
+    background-color: #ffg;
+    padding: 14px 28px;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+    .btn:hover {background: #eee;}
+
+.success {color: Black;}
+.info {color: dodgerblue;}
+.warning {color: orange;}
+.danger {color: red;}
+.default {color: black;}
+</style>
+</head>
+<body>
+	<title>Smart Notes</title>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+	<link rel='stylesheet' href='style.css' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="header">
+		<img src="BlueLogo.png">
+		<a href="#default" class="logo">Smart Notes</a>
+		<div class="header-right">
+			
+    		<a href="Signin.html">SIGN OUT</a>
+    		<a href="About.html">HOME</a>
+    		
+		</div>
+	</div>
+    
+    
+    <h1 style="color:white;" align = center
+        id="Meeting">Meeting Name is :</h1>
+    <h1 id="loadMeetingTime">Meeting Time is : </h1>
+  <button id="loadButton">LoadMeetings:</button>
+    <script src="udatabase.js"></script>
+    
+        
+    </body>
+  
+    
+</html>

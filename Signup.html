@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Notes</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+	<link rel='stylesheet' href='style.css' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="header">
+		<img src="BlueLogo.png">
+		<a href="#default" class="logo">Smart Notes</a>
+		<div class="header-right">
+    		<a href="Signin.html">SIGN IN</a>
+    		<a href="About.html">HOME</a>
+		</div>
+	</div>
+
+	<div id="login_div" class='main-div'>
+		<div class="login_title"><h2>Smart Notes</h2></div>
+		<input type="email" placeholder="Email..." id="email_field" />
+		<input type="password" placeholder="Password.." id="password_field" />
+
+		<button onclick="create_account()">Create An Account</button>
+
+	</div>
+
+	<div id="user_div" class="loggedin-div">
+		<p id="user_para">Welcome to Smart Notes. You're currently logged in</p>
+		<button onclick="logout()">Logout</button>
+		<button id="verify_btn" onclick="send_verification()">Send Verification</button>
+	</div>
+
+
+
+	<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+
+<script>
+    const firebase = require("firebase");
+// Required for side-effects
+require("firebase/firestore");
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCo4T2kz4gNK9_yvP0YqgRfcEQDkfl57ZA",
+    authDomain: "civic-wharf-180001.firebaseapp.com",
+    databaseURL: "https://civic-wharf-180001.firebaseio.com",
+    projectId: "civic-wharf-180001",
+    storageBucket: "",
+    messagingSenderId: "852586187641"
+  };
+  firebase.initializeApp(config);
+</script>
+	<script src="smartnotes.js"></script>
+
+</body>
+</html>
